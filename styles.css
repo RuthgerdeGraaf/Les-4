@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0C0C0C;
+    align-content: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+header{
+    color:white;
+    background-color: #4845E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    color: white;
+    background-color: #0C0C0C;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+button{
+    background-color: #ED4385;
+    color: white;
+    padding: 25px 50px;
+    border-radius: 50px;
+    border: transparent;
+}
+.intro{
+    color: #5722CD;
+    padding: 1px 25%;
+}
+.intro2{
+    color: #5722CD;
+}
+.button2{
+    padding: 25px 80px;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+article{
+    flex: 1 0 33%;
+    margin: 50px;
+    display: flex;
+}
+.infoblok{
+    padding: 10%;
+    flex: 1;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+}
+span{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoplaatje{
+    filter: drop-shadow(1px 10px 14px #7A7A7A);
+}
+.link{
+    text-decoration: none;
+    color: #5722CD;
+}
+blockquote {
+    border: solid thin #5722CD;
+    flex: 1 1 calc(33.33% - 10px);
+    margin: 10px;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    text-align: left;
+    justify-content: center;
+
+    max-width: 500px;
+
+
+}
+section{
+    margin: 50px 10px;
+}
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
+/*                                                                                 Lichtgriejs #F3F6F9 (voor d achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
