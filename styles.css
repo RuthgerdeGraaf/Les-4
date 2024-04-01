@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -13,6 +13,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
+h1{
+    font-size: 50px;
+}
 header{
     color:white;
     background-color: #4845E4;
@@ -20,6 +23,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.start{
+    margin: 10% auto;
 }
 footer {
     text-align: center;
@@ -41,6 +47,9 @@ nav{
     justify-content: space-between;
     flex-direction: row;
 }
+nav p {
+    margin-right: 40px
+}
 button{
     background-color: #ED4385;
     color: white;
@@ -61,11 +70,13 @@ button{
 .flexbox{
     display: flex;
     flex-wrap: wrap;
+    background-color: #F3F6F9;
+    flex-direction: column;
 }
 .flexbox2{
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+ justify-content: space-between;
 }
 article{
     flex: 1 0 33%;
@@ -94,19 +105,47 @@ span{
 }
 blockquote {
     border: solid thin #5722CD;
-    flex: 1 1 calc(33.33% - 10px);
-    margin: 10px;
+    flex: 0 1 calc(33.33% - 20px); /* Flexbox om de blockquotes naast elkaar te plaatsen met ruimte ertussen */
     padding: 60px 30px;
     box-sizing: border-box;
     text-align: left;
-    justify-content: center;
-
-    max-width: 500px;
-
-
+    margin: 20px 0;
 }
 section{
     margin: 50px 10px;
+}
+.slot{
+    color:white;
+    background-color: #4845E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -1%;
+}
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 120px;
 }
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
