@@ -72,11 +72,12 @@ button{
     flex-wrap: wrap;
     background-color: #F3F6F9;
     flex-direction: column;
+    width: 100%;
 }
 .flexbox2{
     display: flex;
     flex-wrap: wrap;
- justify-content: space-between;
+    justify-content: space-between;
 }
 article{
     flex: 1 0 33%;
@@ -85,7 +86,6 @@ article{
 }
 .infoblok{
     padding: 10%;
-    flex: 1;
     align-content: center;
     align-items: center;
     text-align: left;
@@ -96,6 +96,7 @@ span{
     justify-content: center;
     align-items: center;
 }
+
 .infoplaatje{
     filter: drop-shadow(1px 10px 14px #7A7A7A);
 }
@@ -105,7 +106,7 @@ span{
 }
 blockquote {
     border: solid thin #5722CD;
-    flex: 0 1 calc(33.33% - 20px); /* Flexbox om de blockquotes naast elkaar te plaatsen met ruimte ertussen */
+    flex: 0 1 calc(33.33% - 20px);
     padding: 60px 30px;
     box-sizing: border-box;
     text-align: left;
@@ -147,10 +148,44 @@ section{
 .form-group textarea {
     height: 120px;
 }
-/*Paars #5722CD;*/
-/*Blauw #4845E4;*/
-/*Roze #ED4385;*/
-/*Zwart #0C0C0C (voor standaard tekst);*/
-/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
-/*                                                                                 Lichtgriejs #F3F6F9 (voor d achtergrond van de projecten)*/
-/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    nav p {
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    .intro {
+        padding: 10px 10%;
+    }
+
+    .button2 {
+        padding: 10px 30px;
+    }
+
+    .infoblok {
+        padding: 5%;
+    }
+
+    blockquote {
+        padding: 30px 15px;
+    }
+
+    section {
+        margin: 10px 5px;
+    }
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F3F6F9;
+        flex-direction: column;
+        width: 100%;
+    }
+}
